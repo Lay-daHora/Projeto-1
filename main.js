@@ -1,17 +1,13 @@
 window.addEventListener('load', function () {
     const menuButton = document.querySelector('.button-menu');
     const navigation = document.querySelector('.navigation');
+    const close = document.querySelector('.menu-item-close-text');
 
     document.addEventListener('click', function (e) {
         e.preventDefault();
         const target = e.target;
         if (navigation.classList.contains('active')) {
-            if (
-            !target.classList.contains('navigation') 
-            && !target.classList.contains('menu') 
-            && !target.classList.contains('menu-item') 
-            && !target.classList.contains('menu-item-anchor')
-            ) {
+            if (target === close) {
 
                 navigation.classList.remove('active');
             }

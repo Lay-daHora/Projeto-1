@@ -34,6 +34,7 @@ ul {
 .logo {
     display: flex;
 }
+
 .navigation {
     display: flex;
     margin-right: 20px;
@@ -48,15 +49,28 @@ ul {
     margin-top: 20px;
     margin-right: 20px;
 }
+.button-menu:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .navigation {
     display: none;
-    padding: 0 20px;
+}
+
+.navegation-img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 10px auto 15px auto;
+}
+.navegation-img img {
+    width: 45%;
 }
 .navigation.active {
     display: block;
     position: absolute;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(24, 22, 22, 0.952);
     top: 0;
     right: 0;
     margin: 0;
@@ -64,19 +78,29 @@ ul {
 }
 .navigation.active .menu {
     height: 100%;
+    margin-top: 0;
 }
 .navigation.active .menu li {
     list-style: none;
     padding: 10px;
 }
 .navigation.active .menu li a {
-    font-size: 32px;
+    font-size: 36px;
     color: #fff;
     text-decoration: none;
     transition: 0.5s linear;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center; 
 }
 .navigation.active .menu li a:hover {
-    color: red;
+    color: #ffd902;
+}
+.menu-item-close-text {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
 }
 .slider {
     position: relative;
@@ -274,6 +298,7 @@ hr {
 }
 .group-members ul li img:hover {
     transform: scale(1.1);
+    border: 4px solid #c6fde6;
 }
 .group-members-logo {
     position: absolute;
